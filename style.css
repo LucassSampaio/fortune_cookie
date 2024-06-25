@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(25, 3, 97);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 3, 97, 1) 0%,
+    rgba(187, 0, 255, 1) 100%
+  );
+  font-family: "DM Sans", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+}
+
+.box_cookie1,
+.box_cookie2 {
+  width: 26.5rem;
+  height: 25.8rem;
+  border-radius: 0.6rem;
+  background: white;
+  text-align: center;
+  margin: auto;
+  padding: 3rem 4rem;
+  box-sizing: content-box;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+  margin: 0.8rem;
+}
+
+.box_cookie1 img,
+.box_cookie2 img {
+  display: block;
+  margin: 1.25rem auto 0 auto;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #34355b;
+  font-size: medium;
+  margin-top: 0.87rem;
+}
+
+button {
+  align-items: center;
+  background: #ff9500;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.93rem;
+  font-weight: bold;
+  border: 0;
+}
+
+button:hover{
+  background: #f08f07;
+}
+
+#btn_cookie {
+  cursor: pointer;
+}
+
+#phraseRandom {
+  margin-top: 1.06rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.25rem;
+  padding: 0.6rem;
+  background-color: #e4edf1;
+  border-radius: 2px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+#btn_cookie:hover {
+  animation: cookieVibration 0.5s linear infinite both;
+}
+
+#phraseRandom {
+  animation: phrase 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes cookieVibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(3px, -3px);
+  }
+  40% {
+    transform: translate(-3px, -3px);
+  }
+  60% {
+    transform: translate(-3px, 3px);
+  }
+  80% {
+    transform: translate(-3px, -3px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes phrase {
+  0% {
+    transform: translateZ(-150px) translateY(100px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* @keyframes cookieVibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px 2px);
+  }
+  40% {
+    transform: translate(-2px -2px);
+  }
+  60% {
+    transform: translate(2px 2px);
+  }
+  80% {
+    transform: translate(2px -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+} */
